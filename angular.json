@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Workshop"
+    }
+  },
+  "defaultProject": "Workshop",
+  "cli": {
+    "analytics": "b9b83dea-2afd-4f3d-8ca9-e1a5da0cb5bf"
+  }
 }
