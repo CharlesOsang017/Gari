@@ -1,0 +1,26 @@
+
+#carouselExampleIndicators{
+    background-size: contain;
+    background: fixed;
+    background-size: cover;
+}
+img.wrap {
+    float: left;
+    height: 200;
+    width: 100;
+}
+
+.vehi.wrap {
+    float: right;
+    right: -19;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}

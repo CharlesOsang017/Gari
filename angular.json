@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Gari-workshop"
+    }
+  },
+  "defaultProject": "Gari-workshop",
+  "cli": {
+    "analytics": "2b34454e-6f18-4236-84da-63ddcf0150de"
+  }
 }
