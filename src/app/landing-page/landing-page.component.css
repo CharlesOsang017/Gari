@@ -4,13 +4,14 @@
     background: fixed;
     background-size: cover;
 }
+
 img.wrap {
     float: left;
     height: 200;
     width: 100;
 }
 
-.vehi.wrap {
+.service.wrap {
     float: right;
     right: -19;
 }
