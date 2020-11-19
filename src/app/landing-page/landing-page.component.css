@@ -97,3 +97,10 @@ body {
   .instagram:hover {
     animation: bounce 1s;
   }
+.landingpage{
+background-image: url('/assets/images/car6.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100vw;
+}
