@@ -10,6 +10,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { ServiceOfferedComponent } from './service-offered/service-offered.component';
 import { SignupComponent } from './signup/signup.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     ProfileComponent,
     ServiceOfferedComponent,
     SignupComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    GalleryComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
