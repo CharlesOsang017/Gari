@@ -1,4 +1,4 @@
-export class User {
+export class Services {
         image: string;
         description: string;
         name: string;

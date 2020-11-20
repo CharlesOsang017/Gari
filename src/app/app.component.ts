@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BackendApiService } from './services/backend-api.service';
-import { User } from './user.model';
+import { Services } from './Services.model';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { User } from './user.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  users$:User[];
+  users$:Services[];
   constructor(private backendApiService:BackendApiService) {}
 
   ngOnInit() {
