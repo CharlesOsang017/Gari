@@ -8,11 +8,11 @@ import { Observable} from 'rxjs';
 export class ApiService {
 
   baseurl = "gariworkshop.herokuapp.com"
-  httpHeaders = new HttpHeaders({'Content-type': 'application/json'})
+  httpHeaders = new HttpHeaders({'Content-Type': 'application/json'})
 
   constructor(private http:HttpClient) { }
 
   getAllServices(): Observable<any>{
-    return this.http.get(this.baseurl + '/services/')
+    return this.http.get(this.baseurl + '/services/', {headers: this.httpHeaders})
   }
 }
