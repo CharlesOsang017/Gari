@@ -5,3 +5,7 @@
 .top-nav-collapse {
     background-color: #939793;
 }
+
+.navbar a:hover{
+    color: darkgoldenrod;
+}
