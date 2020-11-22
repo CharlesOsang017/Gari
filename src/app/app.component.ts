@@ -8,14 +8,21 @@ import { ApiService } from './api.service';
   providers: [ApiService]
 })
 export class AppComponent {
-  title = 'Gari-workshop';
+  services = [{title: 'Gari-workshop'}];
 
   constructor(private api:ApiService) {
     this.getServices();
   }
 
   getServices = () => {
-
+    this.api.getAllServices().subscribe(
+      data => {
+        this.services = data;
+      },
+      error => {
+        console.log(error)
+      }
+    )
   }
 
 }
