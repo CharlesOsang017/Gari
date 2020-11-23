@@ -1,0 +1,6 @@
+{
+    "/api": {
+        "target": "https://gariworkshop.herokuapp.com/",
+        "secure": false
+    }
+}

@@ -1,33 +1,23 @@
-import { Component } from '@angular/core';
-import { ApiService } from '../api.service';
+import { Component, OnInit } from '@angular/core';
+import { BackendApiService } from '../services/backend-api.service';
+import { Services } from '../Services.model';
 
 @Component({
   selector: 'app-service-offered',
   templateUrl: './service-offered.component.html',
   styleUrls: ['./service-offered.component.css']
 })
+export class ServiceOfferedComponent implements OnInit {
 
-export class ServiceOfferedComponent{
-  services = [{title: 'Gari-workshop'}];
 
-  constructor(private api:ApiService) {
-    this.getServices();
+  services$:Services[];
+  constructor(private backendApiService:BackendApiService) {}
+
+  ngOnInit() {
+    return this.backendApiService.getServices()
+    .subscribe(data =>this.services$ = data );
+
   }
-
-  getServices = () => {
-    this.api.getAllServices().subscribe(
-      data => {
-        this.services = data;
-      },
-      error => {
-        console.log(error)
-      }
-    )
-  }
-
+  
 }
-
-
-
-
-
+  
