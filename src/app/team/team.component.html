@@ -1,4 +1,4 @@
-<br><br><br><br><br>
+<!-- <br><br><br><br><br>
 <div class="row">
   <div class="col-md-3">
     <img src="/assets/images/male.png" width="193" height="193">
@@ -22,4 +22,14 @@
   </div>
 </div>
 
-
+ -->
+<p class="mt-5 pt-5">workshop</p>
+<div class="card-body" *ngFor='let service in services'>
+  <div class="card">
+      <h5 class="card-title"><span  class="badge badge-secondary">{{service.name}}</span>
+      </h5>
+      <div class="card mt-4 p-1">
+          <p>{{service.description}}</p>
+      </div>
+  </div>
+</div>
