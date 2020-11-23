@@ -1,15 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-service-offered',
   templateUrl: './service-offered.component.html',
   styleUrls: ['./service-offered.component.css']
 })
-export class ServiceOfferedComponent implements OnInit {
 
-  constructor() { }
+export class ServiceOfferedComponent{
+  services = [{title: 'Gari-workshop'}];
 
-  ngOnInit(): void {
+  constructor(private api:ApiService) {
+    this.getServices();
+  }
+
+  getServices = () => {
+    this.api.getAllServices().subscribe(
+      data => {
+        this.services = data;
+      },
+      error => {
+        console.log(error)
+      }
+    )
   }
 
 }
+
+
+
+
+

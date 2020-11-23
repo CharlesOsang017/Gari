@@ -7,7 +7,7 @@ import { Observable} from 'rxjs';
 })
 export class ApiService {
 
-  baseurl = "gariworkshop.herokuapp.com"
+  baseurl = "gariworkshop.herokuapp.com/api"
   httpHeaders = new HttpHeaders({'Content-Type': 'application/json'})
 
   constructor(private http:HttpClient) { }
