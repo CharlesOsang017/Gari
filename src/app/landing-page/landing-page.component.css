@@ -1,0 +1,107 @@
+
+#carouselExampleIndicators{
+    background-size: contain;
+    background: fixed;
+    background-size: cover;
+}
+
+img.wrap {
+    float: left;
+    height: 200;
+    width: 100;
+}
+
+.service.wrap {
+    float: right;
+    right: -19;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+.twitter:hover{
+    color: rgb(23, 47, 184);
+    box-sizing: border-box;
+}
+
+.linkedin:hover{
+    color: rgb(71, 99, 255);
+    box-sizing: border-box;
+}
+
+.facebook:hover{
+    color: rgb(85, 4, 235);
+    box-sizing: border-box;
+}
+
+.instagram:hover{
+    color: rgb(189, 128, 120);
+    box-sizing: border-box;
+}
+
+
+.twitter:hover{
+    color: rgb(23, 47, 184);
+    box-sizing: border-box;
+}
+
+.linkedin:hover{
+    color: rgb(71, 99, 255);
+    box-sizing: border-box;
+}
+
+.facebook:hover{
+    color: rgb(85, 4, 235);
+    box-sizing: border-box;
+}
+
+.instagram:hover{
+    color: rgb(189, 128, 120);
+    box-sizing: border-box;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+
+  .twitter:hover {
+    animation: bounce 1s;
+  }
+  
+  .facebook:hover {
+    animation: bounce 1s;
+  }
+  .linkedin:hover {
+    animation: bounce 1s;
+  }
+
+  .instagram:hover {
+    animation: bounce 1s;
+  }
+.landingpage{
+background-image: url('/assets/images/car2.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100vw;
+background-attachment: fixed;
+}

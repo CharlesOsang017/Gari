@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Workshop": {
+    "Gari-workshop": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Workshop",
+            "outputPath": "dist/Gari-workshop",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Workshop:build"
+            "browserTarget": "Gari-workshop:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Workshop:build:production"
+              "browserTarget": "Gari-workshop:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Workshop:build"
+            "browserTarget": "Gari-workshop:build"
           }
         },
         "test": {
@@ -110,19 +110,33 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
             "devServerTarget": "Workshop:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "Workshop:serve:production"
+=======
+            "devServerTarget": "Gari-workshop:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "Gari-workshop:serve:production"
+>>>>>>> origin/Charles
             }
           }
         }
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "Workshop",
   "cli": {
     "analytics": "b9b83dea-2afd-4f3d-8ca9-e1a5da0cb5bf"
+=======
+  "defaultProject": "Gari-workshop",
+  "cli": {
+    "analytics": "2b34454e-6f18-4236-84da-63ddcf0150de"
+>>>>>>> origin/Charles
   }
 }

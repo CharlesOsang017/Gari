@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+<<<<<<< HEAD
 import { ServiceOfferedComponent } from './service-offered/service-offered.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { LoginComponent } from './login/login.component';
@@ -11,10 +12,22 @@ import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BackendApiService } from './services/backend-api.service';
+=======
+import { BlogsComponent } from './blogs/blogs.component';
+import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ServiceOfferedComponent } from './service-offered/service-offered.component';
+import { SignupComponent } from './signup/signup.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { TeamComponent } from './team/team.component';
+>>>>>>> origin/Charles
 
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
     ServiceOfferedComponent,
     BlogsComponent,
     LoginComponent,
@@ -28,6 +41,23 @@ import { BackendApiService } from './services/backend-api.service';
     HttpClientModule
   ],
   providers: [BackendApiService],
+=======
+    BlogsComponent,
+    LoginComponent,
+    NavbarComponent,
+    ProfileComponent,
+    ServiceOfferedComponent,
+    SignupComponent,
+    LandingPageComponent,
+    GalleryComponent,
+    TeamComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+>>>>>>> origin/Charles
   bootstrap: [AppComponent]
 })
 export class AppModule { }
