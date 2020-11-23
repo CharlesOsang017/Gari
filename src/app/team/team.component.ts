@@ -34,3 +34,4 @@ export class TeamComponent implements OnInit {
     .subscribe(data =>this.services$ = data );
   }
 }
+
