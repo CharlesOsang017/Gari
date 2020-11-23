@@ -5,11 +5,10 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class BackendApiService {
-apiUrl  = 'http://localhost:4200'
-// apiUrl  = 'https://gariworkshop.herokuapp.com/'
+apiUrl  = 'https://gariworkshop.herokuapp.com/api/services/'
   constructor(private _http:HttpClient) { }
 
-  getUsers(){
+  getServices(){
     return this._http.get<Services[]>(this.apiUrl);
   }
 }
