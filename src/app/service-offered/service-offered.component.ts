@@ -9,14 +9,14 @@ import { Services } from '../Services.model';
 export class ServiceOfferedComponent implements OnInit {
 
 
-    services$:Services[];
-    constructor(private backendApiService:BackendApiService) {}
-  
-    ngOnInit() {
-      return this.backendApiService.getServices()
-      .subscribe(data =>this.services$ = data );
-  
-    }
-    
+  services$:Services[];
+  constructor(private backendApiService:BackendApiService) {}
+
+  ngOnInit() {
+    return this.backendApiService.getServices()
+    .subscribe(data =>this.services$ = data );
+
   }
+  
+}
   

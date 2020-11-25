@@ -11,10 +11,14 @@ describe('workspace-project App', () => {
   it('should display welcome message', () => {
     page.navigateTo();
 <<<<<<< HEAD
+<<<<<<< HEAD
     expect(page.getTitleText()).toEqual('Workshop app is running!');
 =======
     expect(page.getTitleText()).toEqual('Gari-workshop app is running!');
 >>>>>>> origin/Charles
+=======
+    expect(page.getTitleText()).toEqual('Gari-workshop app is running!');
+>>>>>>> 320bf6db6bd949ae0dbb25737b7b5e47dc040958
   });
 
   afterEach(async () => {
