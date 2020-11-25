@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Gari-workshop": {
+    "Gari": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Gari-workshop",
+            "outputPath": "dist/Gari",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Gari-workshop:build"
+            "browserTarget": "Gari:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Gari-workshop:build:production"
+              "browserTarget": "Gari:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Gari-workshop:build"
+            "browserTarget": "Gari:build"
           }
         },
         "test": {
@@ -110,18 +110,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Gari-workshop:serve"
+            "devServerTarget": "Gari:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Gari-workshop:serve:production"
+              "devServerTarget": "Gari:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Gari-workshop",
+  "defaultProject": "Gari",
   "cli": {
     "analytics": "2b34454e-6f18-4236-84da-63ddcf0150de"
   }
