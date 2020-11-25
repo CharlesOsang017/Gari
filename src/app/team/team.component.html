@@ -24,12 +24,12 @@
 
  -->
 <p class="mt-5 pt-5">workshop services will render here</p>
-<div class="card-body" *ngFor='let service in services'>
+<div class="card-body" *ngFor='let service of services'>
   <div class="card">
-      <h5 class="card-title"><span  class="badge badge-secondary">{{service.name}}</span>
+      <h5 class="card-title"><span  class="badge badge-secondary">{{service.name}} name of service</span>
       </h5>
       <div class="card mt-4 p-1">
-          <p>{{service.description}}</p>
+          <p>{{service.description}} description here</p>
       </div>
   </div>
 </div>

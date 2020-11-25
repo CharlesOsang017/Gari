@@ -1,14 +1,18 @@
 import { Injectable } from '@angular/core';
-import { Services } from '../Services.model';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 @Injectable({
   providedIn: 'root'
 })
 export class BackendApiService {
-apiUrl  = 'https://gariworkshop.herokuapp.com/api/services/'
-  constructor(private _http:HttpClient) { }
+  baseurl  = 'https://gariworkshop.herokuapp.com/api';
+  httpHeaders = new HttpHeaders({'Content-Type': 'application/json'});
+  
+  constructor(private http:HttpClient) { }
 
-  getServices(){
-    return this._http.get<Services[]>(this.apiUrl);
+  getServices(): Observable<any> {
+    return this.http.get(this.baseurl + '/services/', 
+    {headers: this.httpHeaders});
   }
 }

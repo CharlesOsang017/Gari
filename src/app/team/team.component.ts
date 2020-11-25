@@ -21,17 +21,24 @@ import { Services } from '../Services.model';
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
-  styleUrls: ['./team.component.css']
+  styleUrls: ['./team.component.css'],
+  providers: [BackendApiService]
 })
 export class TeamComponent implements OnInit {
+  services = [{ title: 'gari-workshop' }];
 
-
-  services$:Services[];
-  constructor(private backendApiService:BackendApiService) {}
+  constructor(private api: BackendApiService) {
+    this.api.getServices().subscribe(
+      data => {
+        this.services = data;
+      },
+      error => {
+        console.log(error);
+      }
+    )
+   }
 
   ngOnInit() {
-    return this.backendApiService.getServices()
-    .subscribe(data =>this.services$ = data );
   }
 }
 
