@@ -25,12 +25,13 @@ import { Services } from '../Services.model';
   providers: [BackendApiService]
 })
 export class TeamComponent implements OnInit {
-  services = [{ title: 'gari-workshop' }];
+  services:any;
 
   constructor(private api: BackendApiService) {
     this.api.getServices().subscribe(
       data => {
         this.services = data;
+        console.log(data);
       },
       error => {
         console.log(error);
